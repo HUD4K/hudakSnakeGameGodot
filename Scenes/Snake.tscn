@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://b8a1ohg8614d0"]
+
+[ext_resource type="Script" path="res://Scenes/Snake.cs" id="1_eppj0"]
+[ext_resource type="Script" path="res://Scenes/SnakeBody.cs" id="2_e30dk"]
+[ext_resource type="Script" path="res://Scenes/Berry.cs" id="3_l111p"]
+
+[node name="Snake" type="Node2D"]
+script = ExtResource("1_eppj0")
+
+[node name="SnakeBody" type="Sprite2D" parent="."]
+script = ExtResource("2_e30dk")
+
+[node name="Berry" type="Sprite2D" parent="."]
+script = ExtResource("3_l111p")
+
+[node name="GameOverLabel" type="Label" parent="."]
+visible = false
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Game over"
+uppercase = true
